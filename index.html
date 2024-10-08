@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .btn-primary {
+            background-color: #00c3ff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #00b318;
+            border-color: #b30000;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #393440;
+        }
+        label {
+            font-weight: bold;
+            color: #574e49;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="form-container">
+        <h2>Form Biodata</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat:</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Masukkan alamat" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <select class="form-control" id="gender" required>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                    <option value="other">Lainnya</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
